@@ -1,0 +1,15 @@
+INFO:root:Session ID: None, User Query: hi, Model: gpt-4o
+INFO:root:Session ID: None, User Query: what is the qulifications of this person, Model: gpt-4o-mini
+INFO:root:Session ID: None, User Query: what is the qulifications of this person, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+INFO:root:Session ID: string, User Query: what is the name of the person, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+INFO:root:Session ID: string, User Query: what is the name of the person, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+INFO:root:Session ID: string, User Query: what is the name of the person, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+INFO:root:Session ID: , User Query: what is the name of the person, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+INFO:root:Session ID: , User Query: what is the name of the person, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
