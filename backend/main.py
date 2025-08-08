@@ -1,6 +1,8 @@
 import os
 from dotenv import load_dotenv
-load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
+# load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
+load_dotenv()  # Load environment variables from .env file
+
 print("Environment variables loaded.")
 print("API Key:", os.getenv("OPENAI_API_KEY"))
 
@@ -49,13 +51,16 @@ def upload_and_index_document(file: UploadFile = File(...)):
 
     if not file.filename:
         raise HTTPException(status_code=400, detail="No filename provided.")
-    
+    print("File uploaded:", file.filename)
+
     file_extension = os.path.splitext(file.filename)[1].lower()
+    print("File extension:", file_extension)
     
     if file_extension not in allowed_extensions:
         raise HTTPException(status_code=400, detail=f"Unsupported file type. Allowed types are: {', '.join(allowed_extensions)}")
     
     temp_file_path = f"temp_{file.filename}"
+    print("Temporary file path:", temp_file_path)
     
     try:
         # Save the uploaded file to a temporary file
@@ -63,6 +68,7 @@ def upload_and_index_document(file: UploadFile = File(...)):
             shutil.copyfileobj(file.file, buffer)
         
         file_id = insert_document_record(file.filename)
+        print("File ID inserted:", file_id)
         if file_id is None:
             raise HTTPException(status_code=500, detail=f"Failed to insert document record for {file.filename}.")
         success = index_document_to_chroma(temp_file_path, file_id)
@@ -75,6 +81,7 @@ def upload_and_index_document(file: UploadFile = File(...)):
     finally:
         if os.path.exists(temp_file_path):
             os.remove(temp_file_path)
+
 
 @app.get("/list-docs", response_model=list[DocumentInfo])
 def list_documents():

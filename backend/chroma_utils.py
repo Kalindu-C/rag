@@ -7,7 +7,11 @@ from langchain_core.documents import Document
 import os
 
 
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, length_function=len)
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=1000,
+    chunk_overlap=200,
+    length_function=len
+)
 
 embedding_function = OpenAIEmbeddings()
 
@@ -33,7 +37,8 @@ def index_document_to_chroma(file_path: str, file_id: int) -> bool:
         # Add metadata to each split
         for split in splits:
             split.metadata['file_id'] = file_id
-        
+        # print(f"Indexing {len(splits)} document chunks for file_id {file_id}")
+        # print(f"Document chunks: {splits}")
         vectorstore.add_documents(splits)
         # vectorstore.persist()
         return True
