@@ -1,6 +1,5 @@
 import os
 from dotenv import load_dotenv
-# load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
 load_dotenv()  # Load environment variables from .env file
 
 print("Environment variables loaded.")
@@ -13,12 +12,14 @@ from .db_utils import insert_application_logs, get_chat_history, get_all_documen
 from .chroma_utils import index_document_to_chroma, delete_doc_from_chroma
 
 import uuid
+
+
+
 import logging
+logging.basicConfig(filename='app.log', level=logging.INFO)  # Configures how logging will work
+#  Only log messages that are INFO level or higher (INFO, WARNING, ERROR, CRITICAL) will be saved. 
+# DEBUG messages will be ignored.
 
-
-
-
-logging.basicConfig(filename='app.log', level=logging.INFO)
 
 app = FastAPI()
 

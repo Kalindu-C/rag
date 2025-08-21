@@ -8,12 +8,16 @@ from langchain_core.documents import Document
 import os
 from .chroma_utils import vectorstore
 
-retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
 output_parser = StrOutputParser()
 
-
-
+qa_prompt = ChatPromptTemplate.from_messages([
+    ("system", "You are a helpful AI assistant. Use the following context to answer the user's question."
+    "if you don't find context don't answer that question."),
+    ("system", "Context: {context}"),
+    MessagesPlaceholder(variable_name="chat_history"),
+    ("human", "{input}")
+])
 
 # Set up prompts and chains
 contextualize_q_system_prompt = (
@@ -24,21 +28,17 @@ contextualize_q_system_prompt = (
     "just reformulate it if needed and otherwise return it as is."
 )
 
+# print("contextualize_q_system_prompt:", contextualize_q_system_prompt)
+
 contextualize_q_prompt = ChatPromptTemplate.from_messages([
     ("system", contextualize_q_system_prompt),
     MessagesPlaceholder("chat_history"),
     ("human", "{input}"),
 ])
 
+# print("contextualize_q_prompt:", contextualize_q_prompt)
 
-
-qa_prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are a helpful AI assistant. Use the following context to answer the user's question."),
-    ("system", "Context: {context}"),
-    MessagesPlaceholder(variable_name="chat_history"),
-    ("human", "{input}")
-])
-
+retriever = vectorstore.as_retriever(search_kwargs={"k": 2})  #  fetches the top 2 most relevant documents
 
 def get_rag_chain(model="gpt-4o-mini"):
     llm = ChatOpenAI(model=model)

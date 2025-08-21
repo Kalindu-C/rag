@@ -342,3 +342,202 @@ INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 INFO:root:Session ID: 3a25bb09-ddf0-4f0a-8a24-46845cb73254, AI Response: As of my most recent update in October 2023, the President of Sri Lanka is Ranil Wickremesinghe. Please note that political positions can change due to elections or other political events, so it is always a good idea to verify with the latest information from a reliable source.
+INFO:root:Session ID: None, User Query: what are the qulifications i need before interview, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 13e82291-c3a4-4b48-ab53-db915a14f9d4, AI Response: The qualifications you need before an interview depend on the job you are applying for. However, there are general steps and qualifications you can consider:
+
+1. **Education**: Ensure you meet any educational requirements for the position. This could be a high school diploma, bachelor's degree, or any specific course that relates to the job.
+
+2. **Experience**: Verify whether the role requires prior experience. This could be professional work experience or internships.
+
+3. **Skills**: Identify the skills necessary for the job. This could include technical skills, soft skills, or industry-specific knowledge. Be prepared to demonstrate these skills either through discussion or assessment.
+
+4. **Certifications**: Some roles may require specific certifications (e.g., CPR certification for healthcare roles, or PMP for project management).
+
+5. **Portfolio or Work Samples**: For creative roles, you might need a portfolio showcasing your work. Even in non-creative roles, having a collection of work that demonstrates your skills can be beneficial.
+
+6. **Understanding of the Company**: Research the company’s mission, values, and recent news. This prepares you to align your responses with the company’s goals and culture.
+
+7. **Job Description**: Revisit the job description to ensure you understand what is being asked of you and be ready to discuss how your background and skills make you a suitable candidate.
+
+8. **References**: Have a list of professional references ready, should the employer ask for them.
+
+Tailor these to the specific job requirements for the best preparation.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what should i know when facing interview, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 88ab09e8-b693-4e45-81ea-c779393f97aa, AI Response: When preparing for an interview, consider the following key areas:
+
+1. **Project Experience**:
+   - Be ready to discuss your favorite projects in detail.
+   - Clearly explain what the project does, your specific role (lead, contributor, support), and the parts you built or led.
+   - Highlight challenges you faced and how you overcame them.
+   - Think about what you would improve in those projects if you had to do it again.
+
+2. **Technical Skills**:
+   - If the role involves SQL, ensure you understand SQL queries, ACID principles, and possibly indexing.
+   - Practice writing and explaining basic SQL queries, understanding JOINs, WHERE clauses, GROUP BY, and aggregation operations.
+   - If relevant, familiarize yourself with NoSQL, particularly MongoDB, and its query composition.
+
+3. **Performance and Scalability**:
+   - Be prepared to discuss how you considered performance and scalability in your projects.
+   - Explain design decisions that enhance performance or handle increased loads.
+
+4. **Communication Skills**:
+   - Practice explaining complex technical concepts in a simple way.
+   - Demonstrate your ability to clearly articulate how your projects work and their impact.
+
+5. **Creativity and Problem Solving**:
+   - Think about how your projects solved real-world problems or showcased unique thinking.
+   - Be ready to discuss optimizations, innovations, or important design choices you made.
+
+6. **Ownership and Contributions**:
+   - Reflect on your role in team settings: Did you lead initiatives, contribute significantly, or provide support?
+   - Discuss your involvement in design, implementation, testing, or deployment processes.
+
+7. **Prepare Questions**:
+   - Formulate your own questions about the role, team dynamics, or company culture to ask the interviewer.
+
+By focusing on these areas, you'll be better equipped to showcase your skills and experiences during the interview. Good luck!
+INFO:root:Session ID: 88ab09e8-b693-4e45-81ea-c779393f97aa, User Query: which company prepare this, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 88ab09e8-b693-4e45-81ea-c779393f97aa, AI Response: The context you provided doesn't mention a specific company that prepared it. It outlines interview preparation strategies that can be applicable across various tech companies or organizations that conduct interviews for software development or engineering roles. These kinds of preparations and evaluation criteria are commonly tailored by hiring teams in tech firms to assess candidates effectively. If you have a specific company in mind, please provide that context, and I may be able to assist you further!
+INFO:root:Session ID: 88ab09e8-b693-4e45-81ea-c779393f97aa, User Query: what are the Example Prompts to Ask the Candidate , Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 88ab09e8-b693-4e45-81ea-c779393f97aa, AI Response: Here are some example prompts to ask candidates during an interview based on the context provided:
+
+1. **Project Experience**:
+   - Can you walk us through one of your favorite projects?
+   - What specific parts did you build or lead in that project?
+   - What challenges did you face during the project, and how did you solve them?
+   - If you had to improve that project today, what changes would you make?
+
+2. **Technical Skills**:
+   - How would you formulate a prompt to an AI tool to generate code for parsing and validating an email address?
+   - Given a vague prompt like “create a login system,” how would you refine it to get a more specific and useful response?
+
+3. **Performance and Scalability**:
+   - Did you consider performance and scalability during the design of your previous projects? Can you provide examples?
+   - What design decisions did you make that were aimed at optimizing performance or handling scalability?
+
+4. **Ownership and Contributions**:
+   - What specific role did you play in your last project? Were you the lead, a contributor, or part of a support team?
+   - How did your contributions impact the overall success of the project?
+
+5. **Communication**:
+   - Can you clearly explain what a complex system you worked on does and how it works?
+   - How do you approach breaking down complex components to make them understandable to others?
+
+6. **Creativity and Problem Solving**:
+   - Can you share an example of a unique solution you devised for a real-world problem in one of your projects?
+   - Were there any optimizations or innovative approaches in your projects that you are particularly proud of?
+
+These prompts are designed to gauge the candidate’s experience, technical knowledge, communication skills, and problem-solving abilities.
+INFO:root:Session ID: 88ab09e8-b693-4e45-81ea-c779393f97aa, User Query: who is the president of sri lanka, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 88ab09e8-b693-4e45-81ea-c779393f97aa, AI Response: As of my last knowledge update in October 2023, the President of Sri Lanka is Ranil Wickremesinghe. He assumed office on July 21, 2022, after the resignation of the previous president, Gotabaya Rajapaksa. Please verify with up-to-date sources, as political positions can change.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what are the things should i prepare before facing interview, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: cbff5a12-8f99-4e56-aa10-b98b9f080361, AI Response: I'm sorry, but I cannot provide guidance on preparing for an interview as the context does not include that information.
+INFO:root:Session ID: cbff5a12-8f99-4e56-aa10-b98b9f080361, User Query: what are the Example Prompts to Ask the Candidate , Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: cbff5a12-8f99-4e56-aa10-b98b9f080361, AI Response: Here are the example prompts to ask the candidate:
+
+1. Can you walk us through one of your favorite projects?
+2. What specific parts did you build or lead?
+3. What challenges did you face and how did you solve them?
+4. If you had to improve it today, what would you change?
+INFO:root:Session ID: cbff5a12-8f99-4e56-aa10-b98b9f080361, User Query: who is the president of sri lanka, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: cbff5a12-8f99-4e56-aa10-b98b9f080361, AI Response: I'm sorry, but I cannot provide current information on the president of Sri Lanka as the context does not include that information.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what are the qulification do i have to face the interview, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: a18de81e-d374-425e-9a9a-d02512b407ed, AI Response: To prepare for an interview focused on database knowledge and SQL, you should ensure you have the following qualifications and skills:
+
+1. **SQL Queries**: You should be able to write and explain basic SQL SELECT queries, including understanding how to use JOINs, WHERE clauses, GROUP BY, and perform aggregation operations.
+
+2. **ACID Principles**: You need a solid understanding of ACID (Atomicity, Consistency, Isolation, Durability) principles which are essential for ensuring data consistency and reliability.
+
+3. **Indexing**: While not mandatory, a working knowledge of indexing is beneficial. Understanding how indexing can optimize database queries is important.
+
+4. **Query Logic Translation**: The ability to translate requirements into proper query logic is crucial. You should be able to interpret given scenarios and create the corresponding SQL or MongoDB queries.
+
+5. **MongoDB/NoSQL**: If you prefer or are required to use MongoDB, you should be knowledgeable about the find/aggregate syntax and query composition.
+
+6. **Problem-Solving and DSA**: Demonstrate the ability to provide solutions to conceptual problems using appropriate data structures like Stack, Queue, HashMap, Tree, Set, etc. Your problem-solving strategy will be evaluated.
+
+7. **Hands-On Experience**: Have hands-on experience in query writing and a good understanding of how databases operate in a practical sense.
+
+Prepare yourself in these areas to effectively face a database-focused interview.
+INFO:root:Session ID: a18de81e-d374-425e-9a9a-d02512b407ed, User Query: who is the president of sri lanka, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: a18de81e-d374-425e-9a9a-d02512b407ed, AI Response: As of my last update in October 2023, the President of Sri Lanka is Ranil Wickremesinghe. Please verify with a current source as this information may have changed.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what are the things should i prepare before face the interview, Model: gpt-4o-mini
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: ce357678-36d6-4c55-a898-feef83df3e3a, AI Response: I'm sorry, but I don't have context to answer that question.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what are the OOP concept candidate know before the se interview, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 9afda237-6e47-4d2b-8206-26204092fc9c, AI Response: The candidate should have an understanding of the following core OOP concepts before a software engineering interview:
+
+1. **Encapsulation**: The practice of bundling data and the methods that operate on that data, restricting unauthorized access. They should understand how to use access specifiers like private, protected, and public to control visibility.
+
+2. **Abstraction**: The concept of hiding complex implementation details and showing only the necessary features of an object. This is often achieved through abstract classes and interfaces.
+
+3. **Inheritance**: The mechanism by which one class can inherit fields and methods from another class, promoting code reusability. The candidate should understand how to apply inheritance in designing class hierarchies.
+
+4. **Polymorphism**: The ability of different objects to respond in their own way to the same message (method call). This includes understanding method overloading and overriding.
+
+They should also be able to:
+
+- Design a class-based structure to solve a real-world problem.
+- Understand when and how to utilize interfaces, classes, and objects appropriately.
+- Explain object relationships such as "is-a" and "has-a".
+- Write clean, reusable, and maintainable OOP code.
+
+In addition, they should be capable of handling coding prompts and tasks that involve OOP concepts as well as basic algorithmic challenges.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what  are the oop concepts i should know before facing the se interview, Model: gpt-4o
+INFO:root:Session ID: None, User Query: what are the oop concepts should know for se intern, Model: gpt-4o
+INFO:root:Session ID: None, User Query: what are the oop concepts should know for se intern, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 35c34d76-6136-451b-bf38-ab7d08efd1ee, AI Response: For a Software Engineer Intern, the candidate should have a solid understanding of the core Object-Oriented Programming (OOP) concepts, which include:
+
+1. **Encapsulation**: Understanding how to bundle data and methods that operate on that data into a single unit or class, and how to restrict access to some of the object's components.
+
+2. **Abstraction**: Knowledge of how to hide complex implementation details and show only the essential features of the object.
+
+3. **Inheritance**: Understanding how to create new classes based on existing ones, allowing code reusability and the creation of a hierarchical class relationship.
+
+4. **Polymorphism**: The ability to process objects differently based on their data type or class, allowing one interface to be used for a general class of actions.
+
+Additionally, the candidate should be able to:
+
+- Design class-based structures to solve real-world problems.
+- Understand when and how to use interfaces, classes, and objects.
+- Explain object relationships, such as is-a (inheritance) and has-a (composition).
+- Write clean, reusable, and maintainable OOP code.
