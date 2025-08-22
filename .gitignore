@@ -9,4 +9,9 @@ wheels/
 # Virtual environments
 .venv/
 
+.vscode/
+notebook/
+
 .env
+
+create_db.py

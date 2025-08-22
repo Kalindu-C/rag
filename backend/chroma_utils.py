@@ -6,6 +6,36 @@ from typing import List
 from langchain_core.documents import Document
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
+# Import the Pinecone library
+from pinecone import Pinecone
+from pinecone import ServerlessSpec
+from langchain_pinecone import PineconeVectorStore
+
+# Initialize a Pinecone client with your API key
+pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
+
+# Create a dense index with integrated embedding
+index_name = "quickstart-py"
+
+if not pc.has_index(index_name):
+    pc.create_index(
+        name=index_name,
+        dimension=1536,
+        metric="cosine",
+        spec=ServerlessSpec(cloud="aws", region="us-east-1"),
+    )
+
+# Target the index
+index = pc.Index(index_name)
+
+embeddings = OpenAIEmbeddings()
+
+vector_store = PineconeVectorStore(index=index, embedding=embeddings)
+# vectorstore = Chroma(persist_directory="./chroma_db", embedding_function=embeddings)
+
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
@@ -13,9 +43,7 @@ text_splitter = RecursiveCharacterTextSplitter(
     length_function=len
 )
 
-embedding_function = OpenAIEmbeddings()
 
-vectorstore = Chroma(persist_directory="./chroma_db", embedding_function=embedding_function)
 
 def load_and_split_document(file_path: str) -> List[Document]:
     if file_path.endswith('.pdf'):
@@ -37,10 +65,10 @@ def index_document_to_chroma(file_path: str, file_id: int) -> bool:
         # Add metadata to each split
         for split in splits:
             split.metadata['file_id'] = file_id
-        # print(f"Indexing {len(splits)} document chunks for file_id {file_id}")
-        # print(f"Document chunks: {splits}")
-        vectorstore.add_documents(splits)
-        # vectorstore.persist()
+
+        # vectorstore.add_documents(splits)
+        vector_store.add_documents(documents=splits)
+
         return True
     except Exception as e:
         print(f"Error indexing document: {e}")
@@ -48,13 +76,13 @@ def index_document_to_chroma(file_path: str, file_id: int) -> bool:
 
 def delete_doc_from_chroma(file_id: int):
     try:
-        docs = vectorstore.get(where={"file_id": file_id})
-        print(f"Found {len(docs['ids'])} document chunks for file_id {file_id}")
-        
-        vectorstore._collection.delete(where={"file_id": file_id})
+        # Delete using metadata filter
+        index.delete(
+            filter={"file_id": {"$eq": file_id}}
+        )
         print(f"Deleted all documents with file_id {file_id}")
-        
         return True
+    
     except Exception as e:
         print(f"Error deleting document with file_id {file_id} from Chroma: {str(e)}")
         return False

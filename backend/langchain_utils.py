@@ -6,7 +6,9 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from typing import List
 from langchain_core.documents import Document
 import os
-from .chroma_utils import vectorstore
+# from .chroma_utils import vectorstore
+from .chroma_utils import vector_store
+# from .chroma_utils import dense_index
 
 
 output_parser = StrOutputParser()
@@ -38,11 +40,23 @@ contextualize_q_prompt = ChatPromptTemplate.from_messages([
 
 # print("contextualize_q_prompt:", contextualize_q_prompt)
 
-retriever = vectorstore.as_retriever(search_kwargs={"k": 2})  #  fetches the top 2 most relevant documents
+# retriever = vectorstore.as_retriever(search_kwargs={"k": 2})  #  fetches the top 2 most relevant documents
+
+retriever_2 = vector_store.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={"k": 2, "score_threshold": 0.4},
+)
+
+from langchain.vectorstores import Pinecone
+from langchain.embeddings.openai import OpenAIEmbeddings
+
+# Initialize embeddings
+embedding_function = OpenAIEmbeddings()
+
 
 def get_rag_chain(model="gpt-4o-mini"):
     llm = ChatOpenAI(model=model)
-    history_aware_retriever = create_history_aware_retriever(llm, retriever, contextualize_q_prompt)
+    history_aware_retriever = create_history_aware_retriever(llm, retriever_2, contextualize_q_prompt)
     question_answer_chain = create_stuff_documents_chain(llm, qa_prompt)
     rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)    
     return rag_chain

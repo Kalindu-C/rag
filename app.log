@@ -541,3 +541,74 @@ Additionally, the candidate should be able to:
 - Understand when and how to use interfaces, classes, and objects.
 - Explain object relationships, such as is-a (inheritance) and has-a (composition).
 - Write clean, reusable, and maintainable OOP code.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what are the oop concepts should i know before the interview, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3ca6d27b-da2d-4379-8106-d3a09155f817, AI Response: Before an interview for a position that involves Object-Oriented Programming (OOP), you should have a solid understanding of the following core OOP concepts:
+
+1. **Encapsulation**: This is the concept of wrapping data (variables) and methods (functions) that operate on the data into a single unit called a class. Encapsulation also involves restricting access to some of the object's components, which is typically done using access modifiers like private, protected, and public.
+
+2. **Abstraction**: This involves hiding complex implementation details and showing only the necessary features of an object. It’s about creating simple models that represent more complex systems. Abstraction is often achieved through abstract classes and interfaces. 
+
+3. **Inheritance**: This allows a new class to inherit the properties and behavior of an existing class. The new class is called a subclass or derived class, and the existing class is known as superclass or base class. Inheritance promotes code reusability.
+
+4. **Polymorphism**: This allows objects to be treated as instances of their parent class. The two types of polymorphism are compile-time (or method overloading) and runtime (or method overriding). Polymorphism enables one interface to be used for a general class of actions.
+
+Additionally, you should be able to:
+
+- Design a class-based structure to solve real-world problems.
+- Understand when and how to use interfaces, classes, and objects.
+- Explain object relationships, such as "is-a" and "has-a".
+- Write clean, reusable, and maintainable OOP code. 
+
+Having a deep understanding of these concepts will prepare you for questions related to OOP principles in the interview.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what are the oop concepts should i know before the se interview, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: ebcd0a0d-65b6-4e31-b37a-d6e2d1be263d, AI Response: Before a software engineering interview, you should have a strong understanding of the following core Object-Oriented Programming (OOP) concepts:
+
+1. **Encapsulation**: This concept involves bundling the data (variables) and the methods (functions) that operate on the data into a single unit, known as a class, and restricting access to some of the object's components. This is achieved through access modifiers like private, protected, and public.
+
+2. **Abstraction**: Abstraction involves hiding the complex reality while exposing only the necessary parts. In OOP, this is implemented using abstract classes and interfaces that declare methods without implementing them, allowing different classes to implement the details.
+
+3. **Inheritance**: This is the mechanism by which one class can inherit fields and methods from another class. It promotes code reusability and establishes a subtype from an existing object.
+
+4. **Polymorphism**: Polymorphism allows methods to do different things based on the object it is acting upon, even when sharing the same interface. This can be implemented through method overloading (compile-time polymorphism) and method overriding (runtime polymorphism).
+
+Additionally, understanding related concepts, such as:
+
+- Designing a class-based structure to solve real-world problems.
+- Using interfaces, classes, and objects appropriately.
+- Explaining object relationships like "is-a" (inheritance) and "has-a" (composition).
+- Writing clean, reusable, and maintainable OOP code. 
+
+Practicing these concepts through coding exercises and real-world problem scenarios will also be beneficial in an interview setting.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what are the oop concepts should i know before the se interview, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: c38e52f5-bc11-4aa8-9bd0-4e1ec4100586, AI Response: Before a software engineering interview focusing on Object-Oriented Programming (OOP), you should be familiar with the following core OOP concepts:
+
+1. **Encapsulation**: Understand how to bundle data (attributes) and methods (functions) operating on the data into a single unit or class. Know how to protect the integrity of the data by restricting access to certain components.
+
+2. **Abstraction**: Grasp the concept of hiding complex implementation details and showing only the essential features of an object. This often involves creating interfaces or abstract classes.
+
+3. **Inheritance**: Learn how to leverage existing code by deriving new classes from existing ones, allowing for code reuse and establishing relationships between classes.
+
+4. **Polymorphism**: Understand how objects of different classes can be treated as objects of a common superclass, especially focusing on method overriding and interface implementation.
+
+Additionally, you should be able to:
+
+- Design a class-based structure to solve real-world problems.
+- Use interfaces, classes, and objects effectively in various scenarios.
+- Explain object relationships, such as "is-a" (inheritance) and "has-a" (composition).
+- Write clean, reusable, and maintainable OOP code.
+- Clarify requirements or make valid assumptions when necessary.
+- Handle inputs and outputs correctly and anticipate edge cases in your code. 
+
+Familiarizing yourself with these concepts will help you prepare for technical discussions and coding challenges that assess your OOP proficiency.
