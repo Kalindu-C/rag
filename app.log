@@ -612,3 +612,25 @@ Additionally, you should be able to:
 - Handle inputs and outputs correctly and anticipate edge cases in your code. 
 
 Familiarizing yourself with these concepts will help you prepare for technical discussions and coding challenges that assess your OOP proficiency.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: None, User Query: what are the oop concepts should i master before the se interview, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: b4cab2ef-d016-472c-b05b-927620025e5b, AI Response: Before a software engineering interview focusing on Object-Oriented Programming (OOP), you should master the following core OOP concepts:
+
+1. **Encapsulation**: Understand how to bundle the data (attributes) and the methods (functions) that operate on the data into a single unit or class. Know how to restrict access to certain details of the object by using access modifiers (private, public, protected).
+
+2. **Abstraction**: Learn to simplify complex systems by modeling classes based on essential properties and behaviors. This involves creating abstract classes and interfaces that define a blueprint that other classes can implement.
+
+3. **Inheritance**: Understand how to create new classes that are based on existing classes. This involves learning the concept of a base (or parent) class and a derived (or child) class and how the child class inherits the properties and behaviors of the parent class.
+
+4. **Polymorphism**: Know how to implement the concept where objects can be treated as instances of their parent class. This includes understanding method overriding and method overloading.
+
+Additionally, you should be able to:
+
+- Design a class-based structure to solve real-world problems.
+- Understand when and how to use interfaces, classes, and objects.
+- Explain object relationships such as "is-a" (inheritance) and "has-a" (composition).
+- Write clean, reusable, and maintainable OOP code.
+
+Having a solid grasp of these concepts will help you during the interview, along with the ability to demonstrate problem-solving skills using OOP principles.

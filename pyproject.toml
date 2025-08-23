@@ -15,7 +15,6 @@ dependencies = [
     "langchain-pinecone>=0.2.11",
     "numpy>=2.3.2",
     "pinecone>=7.3.0",
-    "psycopg2>=2.9.10",
     "psycopg2-binary>=2.9.10",
     "pydantic>=2.11.7",
     "pypdf>=5.9.0",

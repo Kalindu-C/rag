@@ -7,7 +7,7 @@ from typing import List
 from langchain_core.documents import Document
 import os
 # from .chroma_utils import vectorstore
-from .chroma_utils import vector_store
+from chroma_utils import vector_store
 # from .chroma_utils import dense_index
 
 
